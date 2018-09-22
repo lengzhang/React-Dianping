@@ -1,18 +1,22 @@
-# ⚛️ React 同构脚手架 (Clean Up)
+# 模拟 大众点评 WebApp
 
-54Sword React 同构脚手架 Clean Up 版 
+## [React高级实战 打造大众点评 WebApp by 双越](https://coding.imooc.com/learn/list/99.html) 实战项目 基于 [⚛️ React 同构脚手架 by 54sword ](https://github.com/54sword/react-starter)
+
+## API [React-Dianping-API](https://github.com/lengzhang/React-Dianping-API)
+
+构建伪 API 模拟前后端数据传输
 
 ## 开始
 
 ***没有在windows机器上测试过，可能会报错***
 
 ```
-$ git clone git@github.com:54sword/react-starter.git
-$ cd react-starter
+$ git clone git@github.com:lengzhang/React-Dianping.git
+$ cd React-Dianping
 $ npm install
 $ npm run dev
 ```
-浏览器打开 [http://localhost:4000](http://localhost:4000)
+浏览器打开 [http://localhost:4010](http://localhost:4010)
 
 ## 相关命令说明
 
@@ -52,26 +56,5 @@ NODE_ENV=production __NODE__=true BABEL_ENV=server node src/server
 或使用 pm2 启动服务
 
 ```
-NODE_ENV=production __NODE__=true BABEL_ENV=server pm2 start src/server --name "react-starter" --max-memory-restart 400M
-```
-## 目录结构
-
-```
-.
-├── config                    			# 项目配置文件
-├── dist                    			# 所有打包文件储存在这里
-├── src                      			# 程序源文件
-│   ├── actions              			# redux actions
-│   ├── client           	  			# 客户端入口
-│   ├── common               			# 全局可复用的容器组件
-│   ├── components          			# 全局可复用的容器组件
-│   ├── pages                			# 页面组件
-│   ├── reducers             			# redux reducers
-│   ├── router               			# 路由配置
-│   ├── server               			# 服务端入口
-│   ├── store                			# redux store
-│   └── view                 			# html模版文件
-├── .babelrc                      		# 程序源文件
-├── webpack.development.config.js       # 开发环境的webpack配置项
-└── webpack.profuction.config.js        # 生产环境的wbepakc配置项
+NODE_ENV=production __NODE__=true BABEL_ENV=server pm2 start src/server --name "React-Dianping" --max-memory-restart 400M
 ```

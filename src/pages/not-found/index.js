@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import Shell from '../../components/shell';
 import Meta from '../../components/meta';
 
@@ -24,4 +26,4 @@ export class NotFound extends React.Component {
 
 }
 
-export default Shell(NotFound);
+export default Shell(withRouter(NotFound));

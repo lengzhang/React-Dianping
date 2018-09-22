@@ -8,7 +8,7 @@ let config = {
   host: 'localhost',
 
   //  服务端口
-  port: 4000,
+  port: 4010,
 
   // 登录token，cookie 的名称
   auth_cookie_name: 'signin-cookie',
@@ -18,7 +18,11 @@ let config = {
 
   // 前端打包后，静态资源路径前缀
   // 生成效果如：//localhost:4000/app.bundle.js
-  public_path: '//localhost:4000',
+  public_path: '//localhost:4010',
+
+  // API 请求地址
+  api_path: 'http://dianping_api.lengzhang.me',
+  //api_path: 'http://localhost:3010',
 }
 
 // 开发环境配置

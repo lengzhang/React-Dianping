@@ -1,0 +1,29 @@
+.search-input {
+    font-size: 14px !important;
+    font-weight: normal;
+    border: 0;
+    width: 80%;
+    color: #333 !important;
+}
+
+.search-container {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    /*Flex布局*/
+    display: flex;
+    /* Safari */
+    display: -webkit-flex;
+    justify-content: space-around;
+    /*指定垂直居中*/
+    align-items: center;
+    i {
+        color: #ccc !important;
+    }
+
+    input {
+        width: 80%;
+        color: #333 !important;
+    }
+}
