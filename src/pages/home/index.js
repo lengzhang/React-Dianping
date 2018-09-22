@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // http://blog.csdn.net/ISaiSai/article/details/78094556
 import { withRouter } from 'react-router-dom';
@@ -7,6 +6,10 @@ import { withRouter } from 'react-router-dom';
 // 壳组件
 import Shell from '../../components/shell';
 import Meta from '../../components/meta';
+
+import HomeCategory from '../../components/home/home-category';
+import HomeAd from '../../components/home/home-ad';
+import HomeList from '../../components/home/home-list';
 
 export class Home extends React.Component {
 
@@ -36,13 +39,14 @@ export class Home extends React.Component {
     return(<div>
 
       <Meta title="首页" />
-
-      首页
+      <HomeCategory />
+      <div style={{height: '15px'}}>{/* 分割线 */}</div>
+      <HomeAd/>
+      <HomeList/>
     </div>)
   }
 
 }
-
 
 Home = withRouter(Home);
 

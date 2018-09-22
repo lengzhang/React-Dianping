@@ -164,5 +164,5 @@ module.exports = {
     //   entry: path.join(__dirname, 'client/sw.js'),
     // })
 
-  ]
+    ]
 }
